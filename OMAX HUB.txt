@@ -1,0 +1,368 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 20 | Scripts: 2 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.Button
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[Button]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.Button.Home
+G2L["2"] = Instance.new("ScreenGui", G2L["1"]);
+G2L["2"]["Name"] = [[Home]];
+G2L["2"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["2"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.Button.Home.Frame
+G2L["3"] = Instance.new("Frame", G2L["2"]);
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(76, 94, 255);
+G2L["3"]["Size"] = UDim2.new(0, 282, 0, 294);
+G2L["3"]["Position"] = UDim2.new(0.35675, 0, 0.27069, 0);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["BackgroundTransparency"] = 0.7;
+
+
+-- StarterGui.Button.Home.Frame.b
+G2L["4"] = Instance.new("TextButton", G2L["3"]);
+G2L["4"]["TextWrapped"] = true;
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["TextSize"] = 31;
+G2L["4"]["TextColor3"] = Color3.fromRGB(178, 178, 178);
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(95, 95, 95);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4"]["Size"] = UDim2.new(0, 265, 0, 50);
+G2L["4"]["BackgroundTransparency"] = 0.35;
+G2L["4"]["Name"] = [[b]];
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[SPEED]];
+G2L["4"]["Position"] = UDim2.new(0.02694, 0, 0.72391, 0);
+
+
+-- StarterGui.Button.Home.Frame.b.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["4"]);
+
+
+
+-- StarterGui.Button.Home.Frame.c
+G2L["6"] = Instance.new("TextButton", G2L["3"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextSize"] = 31;
+G2L["6"]["TextColor3"] = Color3.fromRGB(178, 178, 178);
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(95, 95, 95);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6"]["Size"] = UDim2.new(0, 265, 0, 50);
+G2L["6"]["BackgroundTransparency"] = 0.35;
+G2L["6"]["Name"] = [[c]];
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[FLY]];
+G2L["6"]["Position"] = UDim2.new(0.02694, 0, 0.53166, 0);
+
+
+-- StarterGui.Button.Home.Frame.c.UICorner
+G2L["7"] = Instance.new("UICorner", G2L["6"]);
+
+
+
+-- StarterGui.Button.Home.Frame.d
+G2L["8"] = Instance.new("TextButton", G2L["3"]);
+G2L["8"]["TextWrapped"] = true;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextSize"] = 31;
+G2L["8"]["TextColor3"] = Color3.fromRGB(178, 178, 178);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(95, 95, 95);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8"]["Size"] = UDim2.new(0, 265, 0, 50);
+G2L["8"]["BackgroundTransparency"] = 0.35;
+G2L["8"]["Name"] = [[d]];
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[INFJUMP]];
+G2L["8"]["Position"] = UDim2.new(0.02694, 0, 0.3406, 0);
+
+
+-- StarterGui.Button.Home.Frame.d.UICorner
+G2L["9"] = Instance.new("UICorner", G2L["8"]);
+
+
+
+-- StarterGui.Button.Home.Frame.TextLabel
+G2L["a"] = Instance.new("TextLabel", G2L["3"]);
+G2L["a"]["TextWrapped"] = true;
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextScaled"] = true;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["TextSize"] = 30;
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["BackgroundTransparency"] = 1;
+G2L["a"]["Size"] = UDim2.new(0, 291, 0, 32);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[OMAX HUB]];
+
+
+-- StarterGui.Button.Home.Frame.a
+G2L["b"] = Instance.new("TextButton", G2L["3"]);
+G2L["b"]["TextWrapped"] = true;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextSize"] = 31;
+G2L["b"]["TextColor3"] = Color3.fromRGB(178, 178, 178);
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(95, 95, 95);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["b"]["Size"] = UDim2.new(0, 265, 0, 50);
+G2L["b"]["BackgroundTransparency"] = 0.35;
+G2L["b"]["Name"] = [[a]];
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[ANTI FART]];
+G2L["b"]["Position"] = UDim2.new(0.02694, 0, 0.14879, 0);
+
+
+-- StarterGui.Button.Home.Frame.a.UICorner
+G2L["c"] = Instance.new("UICorner", G2L["b"]);
+
+
+
+-- StarterGui.Button.Home.Frame.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["3"]);
+G2L["d"]["CornerRadius"] = UDim.new(0, 14);
+
+
+-- StarterGui.Button.Home.Frame.TextLabel
+G2L["e"] = Instance.new("TextLabel", G2L["3"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextTransparency"] = 0.47;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 68);
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["e"]["TextColor3"] = Color3.fromRGB(253, 255, 54);
+G2L["e"]["BackgroundTransparency"] = 1;
+G2L["e"]["Size"] = UDim2.new(0, 200, 0, 24);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[Made only by ilikelimeclips2]];
+G2L["e"]["Position"] = UDim2.new(0.14184, 0, 0.91837, 0);
+
+
+-- StarterGui.Button.Home.Frame.TextLabel.UIStroke
+G2L["f"] = Instance.new("UIStroke", G2L["e"]);
+G2L["f"]["Transparency"] = 0.55;
+
+
+-- StarterGui.Button.Home.Frame.UIDrag
+G2L["10"] = Instance.new("LocalScript", G2L["3"]);
+G2L["10"]["Name"] = [[UIDrag]];
+
+
+-- StarterGui.Button.Button
+G2L["11"] = Instance.new("TextButton", G2L["1"]);
+G2L["11"]["TextWrapped"] = true;
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(90, 120, 255);
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["Size"] = UDim2.new(0, 72, 0, 72);
+G2L["11"]["BackgroundTransparency"] = 0.8;
+G2L["11"]["Name"] = [[Button]];
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[]];
+G2L["11"]["Position"] = UDim2.new(0, 0, 0.88725, 0);
+
+
+-- StarterGui.Button.Button.TextLabel
+G2L["12"] = Instance.new("TextLabel", G2L["11"]);
+G2L["12"]["TextWrapped"] = true;
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["TextTransparency"] = 0.58;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["TextSize"] = 100;
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["12"]["TextColor3"] = Color3.fromRGB(69, 72, 126);
+G2L["12"]["BackgroundTransparency"] = 1;
+G2L["12"]["Size"] = UDim2.new(0, 72, 0, 72);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Text"] = [[O]];
+
+
+-- StarterGui.Button.Button.UICorner
+G2L["13"] = Instance.new("UICorner", G2L["11"]);
+
+
+
+-- StarterGui.Button.LocalScript
+G2L["14"] = Instance.new("LocalScript", G2L["1"]);
+
+
+
+-- StarterGui.Button.Home.Frame.UIDrag
+local function C_10()
+local script = G2L["10"];
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end;
+task.spawn(C_10);
+-- StarterGui.Button.LocalScript
+local function C_14()
+local script = G2L["14"];
+	local gui = script.Parent
+	local buton = gui.Button
+	local figui = gui.Home
+	local Mainframe = figui.Frame
+	local AntiFart = Mainframe.a
+	local speed = Mainframe.b
+	local fly = Mainframe.c
+	local infjump = Mainframe.d
+	
+	AntiFart.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoid = character:WaitForChild("Humanoid")
+		local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+	
+		local maxHeight = 20
+		local groundCheckDistance = 5
+		local repulsionForce = 1000
+		local isRepelling = false
+	
+		local function isOnGround()
+			local rayOrigin = humanoidRootPart.Position
+			local rayDirection = Vector3.new(0, -groundCheckDistance, 0)
+			local raycastResult = workspace:Raycast(rayOrigin, rayDirection)
+	
+			return raycastResult and raycastResult.Instance
+		end
+	
+		local function onCollision(otherPart)
+			local otherCharacter = otherPart.Parent
+	
+			if otherCharacter:IsA("Model") and otherCharacter:FindFirstChild("Humanoid") then
+				local otherHumanoid = otherCharacter:FindFirstChild("Humanoid")
+	
+				if otherCharacter ~= character then
+					local bodyVelocity = otherCharacter:FindFirstChildOfClass("BodyVelocity")
+					if not bodyVelocity then
+						bodyVelocity = Instance.new("BodyVelocity")
+						bodyVelocity.MaxForce = Vector3.new(10000, 10000, 10000)
+						bodyVelocity.Velocity = Vector3.new(0, 0, 0)
+						bodyVelocity.Parent = otherHumanoidRootPart
+					end
+	
+					otherHumanoidRootPart.Velocity = Vector3.new(0, 0, 0)
+				end
+			end
+		end
+	
+		local function keepPlayerOnGround()
+			if humanoidRootPart.Position.Y > maxHeight then
+				if not isRepelling then
+					isRepelling = true
+					local bodyVelocity = humanoidRootPart:FindFirstChildOfClass("BodyVelocity")
+					if not bodyVelocity then
+						bodyVelocity = Instance.new("BodyVelocity")
+						bodyVelocity.MaxForce = Vector3.new(10000, 10000, 10000)
+						bodyVelocity.Velocity = Vector3.new(0, -repulsionForce, 0)
+						bodyVelocity.Parent = humanoidRootPart
+					end
+				end
+			else
+				isRepelling = false
+				local bodyVelocity = humanoidRootPart:FindFirstChildOfClass("BodyVelocity")
+				if bodyVelocity then
+					bodyVelocity:Destroy()
+				end
+			end
+		end
+	
+		humanoidRootPart.Touched:Connect(onCollision)
+	
+		game:GetService("RunService").Heartbeat:Connect(function()
+			keepPlayerOnGround()
+	
+			if not isOnGround() and humanoidRootPart.Position.Y > maxHeight then
+				humanoidRootPart.Velocity = Vector3.new(0, -repulsionForce, 0)
+			end
+		end)
+		warn("{-----------------------------}")
+		warn("   Made by ilikelimeclips2")
+		warn("{-----------------------------}")
+	
+	end)
+	
+	fly.MouseButton1Click:Connect(function()
+		loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+	end)
+	
+	speed.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoid = character:WaitForChild("Humanoid")
+	
+		humanoid.WalkSpeed = 30
+	
+	end)
+	
+	infjump.MouseButton1Click:Connect(function()
+	
+		local InfiniteJumpEnabled = true
+		game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+	game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+		end)
+	end)
+	local function toggleContent()
+		if figui.Enabled then
+		 figui.Enabled = false
+		else
+	     figui.Enabled = true
+		end
+	end
+	
+	buton.MouseButton1Click:Connect(toggleContent)
+	
+end;
+task.spawn(C_14);
+
+return G2L["1"], require;
